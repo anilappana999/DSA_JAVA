@@ -69,23 +69,25 @@ public class InsertOperations {
 	public static void insertNodeInSortedLinkedList(LinkedList list, int value) {
 
 		Node currNode = list.head;
+		Node newNode = new Node(value);
 		Node temp = null;
 		while (currNode.next != null) {
 
 			if (currNode.data <= value && currNode.next.data <= value) {
 				temp = currNode.next;
-				currNode.next = new Node(value);
+				currNode.next = newNode;
 				currNode.next.next = temp;
 				break;
-			} else {
+			}
+
+			else {
 				currNode = currNode.next;
 			}
 
 		}
-		if(currNode.data!=value&&currNode.next==null) {
+		if (currNode.data != value && currNode.next == null) {
 			currNode.next = new Node(value);
 		}
-		
 
 		PrintLinkedList.printDataInLinkedList(list);
 
