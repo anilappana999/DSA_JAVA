@@ -58,9 +58,7 @@ public class DetectLoopLinkedlist {
 		Node head = list.head;
 		// there are two steps in removing a loop first step is to detect if loop exists
 		// then we need to remove it
-		if (head == null) {
-			return;
-		}
+		
 
 		Node slow = head;
 		Node fast = head;
