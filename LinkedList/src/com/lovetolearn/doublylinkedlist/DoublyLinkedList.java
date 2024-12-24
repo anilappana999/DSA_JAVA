@@ -41,17 +41,24 @@ public class DoublyLinkedList {
 		Node n1 = new Node(2);
 		n.next = n1;
 		n1.prev = n;
-		Node n2 = new Node(3);
+		Node n2 = new Node(5);
 		n1.next = n2;
 		n2.prev = n1;
 		dl.tail = n2;
-
+//		InsertOperations.insertNodeInSortedLinkedList(dl, 1); //need to pass sorted linked-list as parameter
 //		PrintDoubleLinkedList.printForward(dl.head);
 //
 //		PrintDoubleLinkedList.printBackward(dl.tail);
 //		InsertOperations.insertAtBeginning(dl, 0);
 //		InsertOperations.insertAtEnd(dl, 4);
-		InsertOperations.insertAtGivenPosition(dl, 4, 3);
-	}
+//		InsertOperations.insertAtGivenPosition(dl, 4, 3);
+//		SearchOperations.searchPositionOfElement(dl, 6);
+//		SearchOperations.searchMiddleNode(dl);
+//		SearchOperations.findNthNodeFromEnd(dl, 1);
+//		DeleteOperations.DeleteFirstNode(dl);
+//		DeleteOperations.DeleteLastNode(dl);
+//		DeleteOperations.deleteAtGivenPosition(dl, 2);
+		DeleteOperations.deleteGivenkey(dl, 1);
 
+	}
 }

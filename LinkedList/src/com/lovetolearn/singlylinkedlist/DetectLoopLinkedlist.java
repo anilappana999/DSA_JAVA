@@ -22,6 +22,8 @@ public class DetectLoopLinkedlist {
 
 	}
 
+	
+	//detecting loop works based on floyd's algorithm
 	public static boolean detectLoop(LinkedList list) {
 
 		Node slowPtr = list.head;

@@ -35,14 +35,14 @@ public class LinkedList {
 		n4.next = n5;
 		n5.next = n6;
 
-		DetectLoopLinkedlist.removeLoop();
+		// DetectLoopLinkedlist.removeLoop();
 		// InsertOperations.insertNodeInSortedLinkedList(list, 5);
 		// DeleteOperations.DeleteFirstNode(list);
 		// SearchOperation.searchMiddleNode(list);
 		// PrintLinkedList.printDataInLinkedList(list);
 		// InsertOperations.insertAtBeginning(list, 0);
 		/// InsertOperations.insertAtEnd(list, 0);//insert eleemnt in empty linked list
-		// InsertOperations.insertAtEnd(list, 4);
+		InsertOperations.insertAtEnd(list, 5);
 		// InsertOperations.insertAtGivenPosition(list, 7, 3);
 		// DeleteOperations.DeleteLastNode(list);
 		// DeleteOperations.deleteAtGivenPosition(list,3);
